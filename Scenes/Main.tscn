@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://ut2ql3oili4l"]
+
+[ext_resource type="PackedScene" uid="uid://cnxpuebh18vhe" path="res://Scenes/Game.tscn" id="1_rgh2o"]
+[ext_resource type="PackedScene" uid="uid://dmmdlqjdst15d" path="res://Scenes/Maze.tscn" id="2_pbw6q"]
+[ext_resource type="PackedScene" uid="uid://cqi6pr0ttbjs1" path="res://Scenes/Player.tscn" id="3_v1gob"]
+[ext_resource type="PackedScene" uid="uid://dd2chey3v8p37" path="res://Scenes/UI.tscn" id="4_jw32o"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Game" parent="." instance=ExtResource("1_rgh2o")]
+preview_seconds = 10.0
+planning_seconds = 20.0
+maze_path = NodePath("../Maze")
+player_path = NodePath("../Player")
+ui_path = NodePath("../UI")
+camera_path = NodePath("../Player")
+
+[node name="Maze" parent="." instance=ExtResource("2_pbw6q")]
+cells_w = 5
+cells_h = 5
+
+[node name="Player" parent="." instance=ExtResource("3_v1gob")]
+position = Vector2(6, -1)
+scale = Vector2(0.5, 0.5)
+
+[node name="UI" parent="." instance=ExtResource("4_jw32o")]
+game_path = NodePath("../Game")

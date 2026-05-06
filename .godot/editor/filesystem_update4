@@ -1,0 +1,14 @@
+res://Scenes/Maze.tscn
+res://Scripts/Settings.gd
+res://Scripts/UI.gd
+res://Scenes/StartMenu.tscn
+res://Scripts/StartMenu.gd
+res://Scenes/OptionsMenu.tscn
+res://Scripts/OptionsMenu.gd
+res://Scenes/UI.tscn
+res://Scripts/Game.gd
+res://Scenes/Game.tscn
+res://Scripts/Maze.gd
+res://Scripts/Player.gd
+res://Scenes/Main.tscn
+res://Scenes/Player.tscn

@@ -1,0 +1,85 @@
+[gd_scene load_steps=2 format=3 uid="uid://dd2chey3v8p37"]
+
+[ext_resource type="Script" uid="uid://b8s0a3fd5bkla" path="res://Scripts/UI.gd" id="1_w371h"]
+
+[node name="UI" type="CanvasLayer"]
+script = ExtResource("1_w371h")
+scanner_ui_path = NodePath("ScannerUI")
+phase_label_path = NodePath("ScannerUI/PhaseLabel")
+timer_label_path = NodePath("ScannerUI/TimerLabel")
+option_label_path = NodePath("ScannerUI/OptionLabel")
+queue_label_path = NodePath("ScannerUI/QueueLabel")
+level_label_path = NodePath("ScannerUI/LevelLabel")
+win_screen_path = NodePath("WinScreen")
+win_title_label_path = NodePath("WinScreen/WinTitleLabel")
+win_subtitle_label_path = NodePath("WinScreen/WinSubTitleLabel")
+
+[node name="ScannerUI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PhaseLabel" type="Label" parent="ScannerUI"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 46.0
+offset_bottom = 28.0
+
+[node name="TimerLabel" type="Label" parent="ScannerUI"]
+layout_mode = 0
+offset_top = 76.0
+offset_right = 40.0
+offset_bottom = 99.0
+
+[node name="OptionLabel" type="Label" parent="ScannerUI"]
+layout_mode = 0
+offset_top = 176.0
+offset_right = 40.0
+offset_bottom = 199.0
+
+[node name="QueueLabel" type="Label" parent="ScannerUI"]
+layout_mode = 0
+offset_top = 403.0
+offset_right = 40.0
+offset_bottom = 426.0
+
+[node name="LevelLabel" type="Label" parent="ScannerUI"]
+layout_mode = 0
+offset_left = 457.0
+offset_right = 497.0
+offset_bottom = 23.0
+
+[node name="WinScreen" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="WinScreen"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+
+[node name="WinTitleLabel" type="Label" parent="WinScreen"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 46.0
+offset_bottom = 28.0
+
+[node name="WinSubTitleLabel" type="Label" parent="WinScreen"]
+layout_mode = 0
+offset_top = 76.0
+offset_right = 40.0
+offset_bottom = 99.0

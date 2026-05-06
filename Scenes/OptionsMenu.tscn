@@ -1,0 +1,89 @@
+[gd_scene load_steps=2 format=3 uid="uid://b5xjeweb14yvr"]
+
+[ext_resource type="Script" uid="uid://cr8ydkm4mom1m" path="res://Scripts/OptionsMenu.gd" id="1_1jju4"]
+
+[node name="OptionsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1jju4")
+back_scene_path = "uid://baj0nqf14ryhf"
+min_scan_interval = 0.6
+max_scan_interval = 2.0
+speed_value_path = NodePath("CenterContainer/VBoxContainer/SpeedRow/SpeedValue")
+slower_button_path = NodePath("CenterContainer/VBoxContainer/SpeedRow/HBoxContainer/FasterButton")
+faster_button_path = NodePath("CenterContainer/VBoxContainer/SpeedRow/HBoxContainer/SlowerButton")
+level_value_path = NodePath("CenterContainer/VBoxContainer/LevelRow/LevelValue")
+fewer_levels_button_path = NodePath("CenterContainer/VBoxContainer/LevelRow/HBoxContainer2/FewerLevelsButton")
+more_levels_button_path = NodePath("CenterContainer/VBoxContainer/LevelRow/HBoxContainer2/MoreLevelsButton")
+back_button_path = NodePath("CenterContainer/VBoxContainer/BackButton")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="TitleLabel" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Options"
+
+[node name="SpeedRow" type="VBoxContainer" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SpeedLabel" type="Label" parent="CenterContainer/VBoxContainer/SpeedRow"]
+layout_mode = 2
+text = "Scan Speed"
+
+[node name="SpeedValue" type="Label" parent="CenterContainer/VBoxContainer/SpeedRow"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/SpeedRow"]
+layout_mode = 2
+
+[node name="SlowerButton" type="Button" parent="CenterContainer/VBoxContainer/SpeedRow/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "-"
+
+[node name="FasterButton" type="Button" parent="CenterContainer/VBoxContainer/SpeedRow/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "+"
+
+[node name="LevelRow" type="VBoxContainer" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="LevelLabel" type="Label" parent="CenterContainer/VBoxContainer/LevelRow"]
+layout_mode = 2
+text = "Levels"
+
+[node name="LevelValue" type="Label" parent="CenterContainer/VBoxContainer/LevelRow"]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CenterContainer/VBoxContainer/LevelRow"]
+layout_mode = 2
+
+[node name="FewerLevelsButton" type="Button" parent="CenterContainer/VBoxContainer/LevelRow/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "-"
+
+[node name="MoreLevelsButton" type="Button" parent="CenterContainer/VBoxContainer/LevelRow/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "+"
+
+[node name="BackButton" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Back"

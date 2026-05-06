@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqi6pr0ttbjs1"]
+
+[ext_resource type="Script" uid="uid://ja3ajvyse5va" path="res://Scripts/Player.gd" id="1_rpqav"]
+[ext_resource type="Texture2D" uid="uid://dt8u3dsxyq4i8" path="res://Art/manBlue_stand.png" id="2_kyqiw"]
+
+[node name="Player" type="Node2D"]
+script = ExtResource("1_rpqav")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_kyqiw")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)

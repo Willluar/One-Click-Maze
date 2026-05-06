@@ -1,0 +1,18 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1773054747
+export_presets.cfg::TextFile::-1::1771966750::0::1::::<><><>0<>0<><>::
+::res://Art/::1771966302
+All free tiles.png::CompressedTexture2D::6440755080312829384::1771879702::1771879709::1::::<><><>0<>0<>249ed166fcd46a42e8b7505615dd5c85<>res://.godot/imported/All free tiles.png-84cfcf750c1ad675e2b5a389cab2495a.ctex::
+manBlue_stand.png::CompressedTexture2D::8562239074624836869::1771882301::1771882301::1::::<><><>0<>0<>5e137f41d08dab7a4b4f00fe0578bb3d<>res://.godot/imported/manBlue_stand.png-5dfbd240c82b468e6027af3e7fbd8353.ctex::
+tile_0060.png::CompressedTexture2D::8587812663811500146::1771966301::1771966302::1::::<><><>0<>0<>194c41eb2626c0a29cdaa3e353043797<>res://.godot/imported/tile_0060.png-a9ae2824a5dd38d87df1128a2d7edaa3.ctex::
+::res://Scenes/::1771966314
+Game.tscn::PackedScene::5733723705785912078::1771884577::0::1::::<><><>0<>0<><>::uid://d0fqu00553gp8::::res://Scripts/Game.gd
+Main.tscn::PackedScene::1444668603253560733::1771966162::0::1::::<><><>0<>0<><>::uid://cnxpuebh18vhe::::res://Scenes/Game.tscn<>uid://dmmdlqjdst15d::::res://Scenes/Maze.tscn<>uid://cqi6pr0ttbjs1::::res://Scenes/Player.tscn<>uid://dd2chey3v8p37::::res://Scenes/UI.tscn
+Maze.tscn::PackedScene::8026503356933642559::1771966314::0::1::::<><><>0<>0<><>::uid://65sic5gvi080::::res://Scripts/Maze.gd<>uid://cx07kbhh3jko3::::res://Art/All free tiles.png<>uid://dumaaw8jqhgys::::res://Art/tile_0060.png
+Player.tscn::PackedScene::5914287833717308922::1771963544::0::1::::<><><>0<>0<><>::uid://ja3ajvyse5va::::res://Scripts/Player.gd<>uid://dt8u3dsxyq4i8::::res://Art/manBlue_stand.png
+UI.tscn::PackedScene::7425700964366158316::1771965096::0::1::::<><><>0<>0<><>::uid://b8s0a3fd5bkla::::res://Scripts/UI.gd
+::res://Scripts/::1771965903
+Game.gd::GDScript::8925313571670897783::1771965903::0::1::::<>Node<><>0<>0<><>::
+Maze.gd::GDScript::2238892829313685551::1771964859::0::1::::<>Node2D<><>0<>0<><>::
+Player.gd::GDScript::633400174805493314::1771965673::0::1::::<>Node2D<><>0<>0<><>::
+UI.gd::GDScript::4741330726694680998::1771884448::0::1::::<>CanvasLayer<><>0<>0<><>::
